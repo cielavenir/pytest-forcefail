@@ -1,0 +1,16 @@
+language: python
+python:
+  - 2.7
+env:
+  matrix:
+    # Please use "tox --listenvs" to populate the build matrix below.
+    - TESTENV=py27-pytest30
+    - TESTENV=py33-pytest30
+    - TESTENV=py34-pytest30
+    - TESTENV=py35-pytest30
+    - TESTENV=py36-pytest30
+    - TESTENV=pypy-pytest30
+install:
+  - pip install -U tox
+script:
+  - tox --recreate -e $TESTENV
