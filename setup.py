@@ -4,7 +4,7 @@ setup(
     name='pytest-forcefail',
     description='py.test plugin to make the test failing regardless of pytest.makr.xfail',
     long_description=open("README.md").read(),
-    version='0.0.0.1',
+    version='0.0.0.2',
     url='https://github.com/cielavenir/pytest-forcefail',
     license='BSD',
     author='cielavenir',
