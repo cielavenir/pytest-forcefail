@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pytest-forcefail',
-    description='py.test plugin to show failures instantly',
+    description='py.test plugin to make the test failing regardless of pytest.makr.xfail',
     long_description=open("README.md").read(),
     version='0.0.0.1',
     url='https://github.com/cielavenir/pytest-forcefail',
