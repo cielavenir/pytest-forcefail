@@ -8,3 +8,5 @@ pytest-forcefail is a plugin providing
 These two will make the test failing **regardless of pytest.mark.xfail**.
 
 See test\_forcefail.py for example.
+
+Binary distribution: https://pypi.org/project/pytest-forcefail/
