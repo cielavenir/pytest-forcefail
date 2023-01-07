@@ -1,10 +1,14 @@
 from setuptools import setup
 
+versionContext = {}
+with open('pytest_forcefail/version.py') as f:
+    exec(f.read(), versionContext)
+
 setup(
     name='pytest-forcefail',
     description='py.test plugin to make the test failing regardless of pytest.mark.xfail',
     long_description=open("README.md").read(),
-    version='0.0.0.3',
+    version=versionContext['__version__'],
     url='https://github.com/cielavenir/pytest-forcefail',
     license='BSD',
     author='cielavenir',
